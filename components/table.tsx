@@ -1,5 +1,6 @@
 import { BiEdit, BiTrashAlt, BiWindowClose } from "react-icons/bi";
 import { User } from "../types/user";
+import Image from 'next/image';
 import { AiFillCloseSquare } from "react-icons/ai";
 
 type IProps = {

@@ -56,11 +56,11 @@ export default function Login(props) {
         body: JSON.stringify(values),
       };
 
-      await fetch("http://localhost:3000/api/auth/signup", options)
+      await fetch("http://localhost:8888/.netlify/api/auth/signup", options)
         .then((res: any) => res.json())
         .then((data) => {
           if (data.status < 300) {
-            router.push("http://localhost:3000/auth/login");
+            router.push("http://localhost:8888/.netlify/auth/login");
           } else {
             message.error(data.message);
           }

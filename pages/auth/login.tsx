@@ -33,12 +33,12 @@ export default function Login() {
 
   // Google Handler function
   async function handleGoogleSignin() {
-    signIn("google", { callbackUrl: "http://localhost:3000" });
+    signIn("google", { callbackUrl: "http://localhost:8888/.netlify" });
   }
 
   // Github Login
   async function handleGithubSignin() {
-    signIn("github", { callbackUrl: "http://localhost:3000" });
+    signIn("github", { callbackUrl: "http://localhost:8888/.netlify" });
   }
 
   return (

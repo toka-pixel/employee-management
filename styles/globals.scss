@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import './common/_style.scss';
+
+
+
+/* all elements and descent elements */
+*>*{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.webkitCenter{
+  text-align: -webkit-center;
+}
+
+.ant-btn-primary , .ant-btn-primary:hover {
+  background-color: $petroleum;
+  // padding-top: 0.75rem;
+  // padding-bottom: 0.75rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  height: 38px;
+}
+.ant-input{
+  height: 38px;
+}
